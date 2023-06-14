@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>K-Merchify</title>
+
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<style>
+  #menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.login_menu {
+    display: flex;
+    text-align: right;
+    float: right;
+}
+
+.login_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.login_menu li {
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.login_menu li a {
+    color: #ffffff;
+}
+
+.login_menu li a:hover {
+    color: #f26522;
+}
+.padding_10 {
+    padding-left: 10px;
+}
+</style>
+  </head>
+
+  <body>
+
+    
+    <!-- *** Preloader Start *** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- *** Preloader End *** -->
+
+    <!-- Header -->
+    <header class="">   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+      
+         
+  
+
+          <a class="navbar-brand" href="index.html"><h2>K-<em>Merchify</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            
+          </button>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Profile</a></li>
+              <li><a class="menu__item" href="#">Home</a></li>
+            
+              <li><a class="menu__item" href="#">About</a></li>
+              <li><a class="menu__item" href="#">Team</a></li>
+              <li><a class="menu__item" href="#">Contact</a></li>
+             
+            </ul>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="store.html">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+            </ul>
+            
+
+          </div>
+        
+         </div>
+         <div class="login_menu">
+          <ul>
+             <li><a href="payment/payment.html">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span class="padding_10">Cart</span></a>
+             </li>
+             
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner header-text">
+      <div class="owl-banner owl-carousel">
+        <div class="banner-item-01">
+          <div class="text-content">
+            <h4>Best Offer</h4>
+            <h2>New Arrivals On Sale</h2>
+          </div>
+        </div>
+        <div class="banner-item-02">
+          <div class="text-content">
+            <h4>Flash Deals</h4>
+            <h2>Get your best products</h2>
+          </div>
+        </div>
+        <div class="banner-item-03">
+          <div class="text-content">
+            <h4>Last Minute</h4>
+            <h2>Grab last minute deals</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Latest Products</h2>
+              <a href="store.html">view all products <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="1.png" alt=""></a>
+              <div class="down-content">
+                <a href="payment/payment.html"><h4>New Jeans Album</h4></a>
+                <h6>$15.00</h6>
+                <p>Contents of the album include a CD, Outbox, Log Book (65 pages), Pin-Up Book (76 pages), 7 Phoning Manual Books, ID Card, 3 Sticker Packs, 5 Photo Cards, 6 Mini Posters.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (24)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="2.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="payment/payment.html"><h4>New Jeans Lightstick</h4></a>
+                <h6>$20.25</h6>
+                <p>The Binky Bong is NewJeans's official lightstick.The lightstick's design resembles a white rabbit, which references the group's fandom name "Bunnies" or "Tokki"</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (21)</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="3.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="payment/payment.html"><h4>Antifragile</h4></a>
+                <h6>$20.45</h6>
+                <p>Unforgiven is the first studio album by South Korean girl group Le Sserafim. It was released by Source Music on May 1, 2023, alongside the lead single of the same name.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (36)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="4.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>Twice</h4></a>
+                <h6>$15.25</h6>
+                <p>Twice is a South Korean girl group formed by JYP Entertainment. The group is composed of nine members: Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, and Tzuyu.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (48)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="5.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>Twice</h4></a>
+                <h6>$12.50</h6>
+                <p>Twice is a South Korean girl group formed by JYP Entertainment. The group is composed of nine members: Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, and Tzuyu.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (16)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="6.jpg" alt=""></a>
+              <div class="down-content">
+                <a href="#"><h4>IVE</h4></a>
+                <h6>$22.50</h6>
+                <p>Ive is a South Korean girl group formed by Starship Entertainment. The group is composed of six members: Gaeul, Yujin, Rei, Wonyoung, Liz and Leeseo. </p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (32)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="best-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+             
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div
+  
+            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>
